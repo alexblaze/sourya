@@ -64,21 +64,21 @@ const Login = () => {
               alignItems: "center",
             }}
           >
-            <img
+            {/* <img
               style={{ height: "80px", width: "80px", cursor: "pointer" }}
               onClick={() => {
                 navigate("/");
               }}
               src="login-content/landing-page-logo.svg"
               alt="neesum login page logo"
-            />
+            /> */}
             <div
               style={{
                 color: "#726d6d",
                 fontSize: "1.1rem",
               }}
             >
-              Welcome to ErpNeesum
+              Welcome to Sourya
             </div>
             <Form
               form={form}
@@ -154,18 +154,10 @@ const Login = () => {
                   >
                     Login
                   </Button>
-                  <img src="login-content/or-design.svg" alt="or icon" />
                 </div>
               </div>
             </Form>
           </div>
-          <span
-            style={{
-              marginLeft: "auto",
-              fontSize: "0.7rem",
-              paddingRight: "15px",
-            }}
-          ></span>
         </div>
       </div>
     </div>

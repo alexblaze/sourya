@@ -8,10 +8,12 @@ import { useRequest } from "ahooks";
 import { login } from "../app/api/login/login";
 import { setUser } from "../app/utils/cookieHelper";
 import { LoginType, UserData } from "../app/types/types";
+import { useNavigate } from "react-router-dom";
 
 export default function useLoginPage() {
   const [form] = Form.useForm();
   const invalidToken = localStorage.getItem("InvalidToken");
+  const navigate = useNavigate();
   useEffect(() => {
     if (invalidToken !== null) {
       showErrorNotification({
@@ -50,6 +52,9 @@ export default function useLoginPage() {
         message: "Success",
         description: "Login Successful!",
       });
+      if (userData?.userType === "ADM") {
+        navigate("/admin/dashboard");
+      }
     },
     onError: (err) => {
       localStorage.removeItem("InvalidToken");
