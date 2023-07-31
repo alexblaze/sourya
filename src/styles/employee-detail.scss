@@ -1,0 +1,58 @@
+@import "app/assets/styles/color";
+
+.profile-info {
+  position: relative;
+  margin-bottom: 50px;
+
+  .profile-detail {
+    .ant-card-body {
+      padding: 0;
+
+      .ant-upload.ant-upload-select {
+        display: flex;
+      }
+
+      .role {
+        background: $primary;
+        color: $light;
+        border-radius: 20px;
+        padding: 6px 15px;
+      }
+
+      > .ant-row {
+        flex-flow: row;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .profile-info .profile-detail {
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .profile-info {
+    .profile-pic {
+      position: relative;
+    }
+
+    .profile-detail {
+      margin-left: 0;
+      padding: 0;
+      border-top-left-radius: 250px;
+      border-top-right-radius: 250px;
+      border-bottom-left-radius: 20px;
+
+      .profile-pic {
+        width: 100% !important;
+      }
+
+      .ant-card-body > .ant-row {
+        flex-flow: column;
+      }
+    }
+  }
+}

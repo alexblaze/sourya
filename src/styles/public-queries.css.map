@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACF,gBAAgB,EAAE,SAAS;CAC5B;;AAED,AAAA,MAAM,CAAA;EACJ,gBAAgB,EAAE,SAAS;CAC5B",
+    "sources": [
+        "public-queries.scss"
+    ],
+    "names": [],
+    "file": "public-queries.css"
+}

@@ -1,0 +1,10 @@
+.company-profile {
+  margin-top: -20px !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .company-profile {
+    margin-top: -60px !important;
+  }
+}
+/*# sourceMappingURL=company-profile.css.map */

@@ -1,0 +1,39 @@
+.red {
+  background-color: #e8020226;
+}
+
+.green {
+  background-color: #b1bfef5c;
+}
+
+/* tr.ant-table-row.primary {
+  background: #5a73c1;
+  color: #fff;
+
+  td {
+    border-bottom: 1px solid #506abb !important;
+  }
+} */
+
+tr.ant-table-row.primary {
+  td {
+    background: #87b387de !important;
+    color: #333;
+    border-bottom: 1px solid #6eaa6e !important;
+  }
+
+  &:hover > td {
+    background: #63a263 !important;
+  }
+}
+tr.ant-table-row.secondary {
+  td {
+    background-color: #d58f73 !important;
+    color: #fff;
+    border-bottom: 1px solid #b9775c !important;
+  }
+
+  &:hover > td {
+    background: #dd774e !important;
+  }
+}
